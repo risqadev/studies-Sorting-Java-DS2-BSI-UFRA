@@ -25,7 +25,7 @@ public class BubbleSortV2 {
       n=n+1;
     }
     for (i=0;i<=4;i++) {
-      System.out.println((i+1)+"o numero: " + X[i]);
+      System.out.printf("%d  ", X[i]);
     }
   }
 }

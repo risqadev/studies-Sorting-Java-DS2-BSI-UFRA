@@ -1,26 +1,17 @@
-import java.util.*;
-
 public class BubbleSortV1 {
-  public static void main (String args []) {
-    int X[] = new int [5];
-    int n,i,aux;
-    Scanner entrada = new Scanner (System.in);
-    for (i=0; i<=4; i++) {
-      System.out.println("Digite o "+(i+1) +"o numero: " );
-      X[i] = entrada.nextInt();
-    }
-
-    for (n=1; n<=4; n++) {
-      for (i=4; i>=n; i--) {
-        if(X[i] < X[i-1]) {
-          aux = X[i];
-          X[i] = X[i-1];
-          X[i-1] = aux;
+  public static int [] ordenar (int [] lista) {
+    int t = lista.length, aux;
+    for (int n = t-1; n > 0; n--) {
+      System.out.printf("iteracao %d %n", t-n);
+      for (int i = 0; i < n; i++) {
+        System.out.printf("comparando pos %d com %d %n", i, i+1);
+        if(lista[i] > lista[i+1]) {
+          aux = lista[i];
+          lista[i] = lista[i+1];
+          lista[i+1] = aux;
         }
       }
     }
-    for (i=0;i<=4;i++) {
-      System.out.println((i+1)+"o numero: " + X[i]);
-    }
+    return lista;
   }
 } 
