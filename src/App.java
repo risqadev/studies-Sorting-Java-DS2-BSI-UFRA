@@ -8,6 +8,9 @@ public class App {
 
     // Imprimir.array(lista);
     
+    // BubbleSortV2.ordenar(lista);
+    // Imprimir.array(lista);
+    
     int lista1[] = BubbleSortV0.ordenar(lista.clone());
     System.out.printf("         Lista ordenada: ");
     Imprimir.array(lista1);
