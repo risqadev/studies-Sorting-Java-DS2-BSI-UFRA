@@ -1,9 +1,9 @@
 public class BubbleSortV1 {
   public static int [] ordenar (int [] lista) {
     System.out.println("\n########## Bubble Sort v1");
-    int t = lista.length, aux;
-    for (int n = t-1; n > 0; n--) {
-      System.out.printf("ITERACAO %d %n", t-n);
+    int aux;
+    for (int n = lista.length-1; n > 0; n--) {
+      System.out.printf("ITERACAO %d %n", lista.length-n);
       for (int i = 0; i < n; i++) {
         System.out.printf("comparando pos %d com %d - ", i, i+1);
         Imprimir.array(lista);
