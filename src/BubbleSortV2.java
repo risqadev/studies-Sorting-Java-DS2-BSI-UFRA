@@ -13,6 +13,8 @@ public class BubbleSortV2 {
           aux = lista[i];
           lista[i] = lista[i+1];
           lista[i+1] = aux;
+          System.out.printf("troca      pos %d com %d - ", i, i+1);
+          Imprimir.array(lista);
         }
       }
       n--;

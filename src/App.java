@@ -24,12 +24,16 @@ public class App {
     // System.out.printf("         Lista ordenada: ");
     // Imprimir.array(lista3);
 
-    int lista4[] = SelectionSortV1.ordenar(lista.clone());
-    System.out.printf("         Lista ordenada: ");
-    Imprimir.array(lista4);
+    // int lista4[] = SelectionSortV1.ordenar(lista.clone());
+    // System.out.printf("         Lista ordenada: ");
+    // Imprimir.array(lista4);
 
-    int lista5[] = SelectionSortV2.ordenar(lista.clone());
+    // int lista5[] = SelectionSortV2.ordenar(lista.clone());
+    // System.out.printf("         Lista ordenada: ");
+    // Imprimir.array(lista5);
+
+    int lista6[] = InsertionSort.ordenar(lista.clone());
     System.out.printf("         Lista ordenada: ");
-    Imprimir.array(lista5);
+    Imprimir.array(lista6);
   }
 }
